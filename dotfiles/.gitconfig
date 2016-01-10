@@ -1,0 +1,17 @@
+[user]
+	name = Cristian Cardellino
+	email = crscardellino@gmail.com
+[core]
+	editor = vim
+	autocrlf = false
+[push]
+	default = simple
+[diff]
+	tool = vimdiff
+[alias]
+    st = status -sb
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log --no-merges --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
