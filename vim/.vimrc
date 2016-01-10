@@ -22,22 +22,11 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-rails'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-
-" Brief help Vundle
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just
-" :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to
-"                     auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
 
 syntax on           " syntax highlighting
 set history=50      " keep 50 lines of command line history
@@ -58,6 +47,7 @@ let maplocalleader = "\\"
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+" Remove temp files created by vim
 set nobackup
 set noundofile
 
@@ -81,7 +71,6 @@ colorscheme solarized
 " Airline
 set laststatus=2
 set ttimeoutlen=50
-set guifont=Menlo\ for\ Powerline
 
 let g:airline#extensions#tabline#enabled        = 1
 let g:airline#extensions#branch#enabled         = 1
