@@ -22,6 +22,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-rake'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " All of your Plugins must be added before the following line
@@ -29,20 +30,30 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 syntax on           " syntax highlighting
+set hidden          " don't force close of buffers
 set history=50      " keep 50 lines of command line history
 set ruler           " show the cursor position all the time
 set showcmd         " display incomplete commands
-set incsearch	    " do incremental searching
 set number          " show line number
 set autochdir       " change the dir
-set textwidth=80    " word wrap 
+set textwidth=0     " word wrap 
+
+" Searching
+set incsearch	    " do incremental searching
+set hlsearch        " highlight search results
+set ignorecase      " ignore case while searching
+set smartcase       " case-sensitive is patter is not all-lowercase
 
 " Wrap paragraph
 map <C-q> {gq}
 
 " Leader and LocalLeader
-let mapleader = "-"
+let mapleader = ","
 let maplocalleader = "\\"
+
+" Buffer switching
+nnoremap <leader>n :bn<cr>
+nnoremap <leader>p :bp<cr>
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
