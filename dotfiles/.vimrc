@@ -67,6 +67,10 @@ set title
 let mapleader = ","
 let maplocalleader = "\\"
 
+" Capital "Q" to quit all
+command Q :qall
+command W :wall
+
 " =================
 " Buffers & Windows
 " =================
