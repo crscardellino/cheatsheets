@@ -4,6 +4,10 @@
 
 [Cheatsheet](http://vim.rtorr.com/)
 
+### Other commands
+
+* `J` (uppercase J) to put everything in one line
+
 ## Plugins cheatsheet
 
 ### CtrlP Fuzzy Finder
