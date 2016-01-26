@@ -69,7 +69,12 @@ let maplocalleader = "\\"
 
 " Capital "Q" to quit all
 command Q :qall
+
+" Capital "W" to write all
 command W :wall
+
+" Capital "WQ" to write and quit all
+command WQ :wall | :qall
 
 " =================
 " Buffers & Windows
