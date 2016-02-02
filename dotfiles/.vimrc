@@ -196,6 +196,9 @@ map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 
+" continue to next and previous line when moving with 'h' and 'l'
+set whichwrap+=h,l 
+
 " ======
 " Search
 " ======
