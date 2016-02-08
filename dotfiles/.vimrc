@@ -97,8 +97,11 @@ syntax on
 " word wrap
 set textwidth=0
 
-" Wrap paragraph
-map <C-q> {gq}
+" wrap paragraph
+nnoremap <C-q> {gq}
+
+" insert newline character
+nnoremap <C-j> a<CR><Esc>k$
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -247,3 +250,7 @@ let g:syntastic_check_on_wq = 0
 " NERDTree
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
+
+" vimtex
+let g:vimtex_latexmk_continuous = 0
+let g:vimtex_quickfix_mode = 0
