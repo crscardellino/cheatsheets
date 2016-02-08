@@ -98,10 +98,11 @@ syntax on
 set textwidth=0
 
 " wrap paragraph
-nnoremap <C-q> {gq}
+nmap <c-q> {gq}
 
 " insert newline character
-nnoremap <C-j> a<CR><Esc>k$
+nmap <c-o> O<Esc>j
+nmap <CR> o<Esc>k
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
