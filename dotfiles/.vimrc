@@ -34,6 +34,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'junegunn/goyo.vim'
 Plugin 'lervag/vimtex'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
@@ -42,6 +43,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-rake'
+Plugin 'tpope/vim-surround'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " Vundle end
@@ -76,6 +78,8 @@ command W :wall
 " Capital "WQ" to write and quit all
 command WQ :wall | :qall
 
+" "Vimrc" to edit the .vimrc file
+command Vimrc :tabe ~/.vimrc
 " =================
 " Buffers & Windows
 " =================
@@ -101,8 +105,10 @@ set textwidth=0
 nmap <c-q> {gq}
 
 " insert newline character
-nmap <c-o> O<Esc>j
-nmap <CR> o<Esc>k
+nmap <c-o> O<esc>j
+nmap <m-o> o<esc>k
+
+nnoremap <cr> a<cr><esc>k$
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -254,4 +260,4 @@ autocmd VimEnter * wincmd p
 
 " vimtex
 let g:vimtex_latexmk_continuous = 0
-let g:vimtex_quickfix_mode = 0
+let g:vimtex_latexmk_background = 1
