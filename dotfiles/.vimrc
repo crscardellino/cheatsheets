@@ -108,6 +108,14 @@ nmap <c-q> {gq}
 nmap <c-o> O<esc>j
 nmap <m-o> o<esc>k
 
+" insert new spaced paragraph
+" before non-blank line 
+nmap <leader>O O<esc>O
+" after non-blank line
+nmap <localleader>o o<esc>o
+" in blank line
+nmap <leader>o o<esc>O
+
 nnoremap <cr> a<cr><esc>k$
 
 " allow backspacing over everything in insert mode
