@@ -62,6 +62,9 @@ set history=100
 " use 100 levels of undo
 set undolevels=100
 
+" set endline to unix-style
+set ff=unix
+
 " change the terminal's title
 set title
 
