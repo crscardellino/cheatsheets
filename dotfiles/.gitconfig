@@ -1,13 +1,13 @@
 [user]
-	name = Cristian Cardellino
-	email = crscardellino@gmail.com
+    name = Cristian Cardellino
+    email = crscardellino@gmail.com
 [core]
-	editor = vim
-	autocrlf = false
+    editor = vim
+    autocrlf = false
 [push]
-	default = simple
+    default = simple
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 [alias]
     st = status -sb
     ci = commit
@@ -15,3 +15,10 @@
     co = checkout
     df = diff
     lg = log --no-merges --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
